@@ -3,7 +3,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     body {
         background-image: url(/img/josuke\ background\ midia.jpg);
         flex-direction: column;
