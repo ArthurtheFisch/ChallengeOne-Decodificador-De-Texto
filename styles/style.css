@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik+Mono+One&display=swap');
+
+:root {
+    --cor-primaria: #DCE0D9;
+    --cor-secundaria: #FFFFFF;
+    --cor--terciaria: #736F72;
+    --cor--quatenaria: #ACB6A5;
+    --cor--rodape: rgba(107, 78, 113, 0.8);
+
+    --cor-hover: #692C50;
+
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-secundaria: 'Rubik Mono One', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url(/img/peakpx.jpg);
+    max-width: 100%;
+    margin: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor--rodape);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor--rodape);
+    border-radius: 10px;
+    border: 1px solid var(--cor--quatenaria);
+}
+
+.conteudo_principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 2% 5% 2%;
+    gap: 2.75rem;
+}
+
+.conteudo_principal_campo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+}
+
+.texto {
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 1.5r;
+    text-transform: lowercase;
+    resize: none;
+}
+
+.texto::placeholder {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    text-transform: none;
+    text-shadow: 2px 2px black;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.texto::-webkit-scrollbar {
+    width: 5px;
+}
+
+.texto::-webkit-scrollbar-track {
+    background: var(--cor--rodape);
+}
+
+.texto::-webkit-scrollbar-thumb {
+    background-color: var(--cor--rodape);
+    border-radius: 10px;
+    border: 1px solid var(--cor-primaria);
+}
+
+.conteudo_principal_aviso {
+    display: flex;
+    align-items: center;
+    color: var(--cor-primaria);
+    padding: 5px 0 2px 0;
+    gap: 10px;
+}
+
+.conteudo_principal_aviso img {
+    width: 15px;
+    height: 15px;
+}
+
+.conteudo_principal_aviso p {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    font-style: normal;
+    text-shadow: 2px 2px black;
+}
+
+.conteudo_principal_botoes {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.botao_criptografar {
+    align-items: flex-start;
+    width: 50%;
+    padding: 1rem;
+
+    color: var(--cor-primaria);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+
+    text-shadow: 3px 3px black;
+    background: linear-gradient(rgba(105, 44, 80, 0.5), #1E0B0B);
+    transition: all .2s ease;
+    font-family: var(--fonte-secundaria);
+    border-color: #FFFFFF;
+    border-style: solid;
+    cursor: pointer;
+    gap: 1.5rem;
+}
+
+.botao_descriptografar {
+    align-items: flex-start;
+    width: 50%;
+    padding: 1rem;
+
+    color: var(--cor-primaria);
+    clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+
+    text-shadow: 3px 3px black;
+    background: linear-gradient(rgba(105, 44, 80, 0.5), #1E0B0B);
+    transition: all .2s ease;
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-secundaria);
+    cursor: pointer;
+    gap: 1.5rem;
+}
+
+.conteudo_principal_mensagens {
+    padding: 20px 0 0 0;
+}
+
+.conteudo_principal_mensagens img {
+    padding: 0 20%;
+}
+
+.conteudo_principal_mensagens h2 {
+    text-shadow: 2px 2px black;
+}
+
+.conteudo_principal_mensagens p {
+    text-shadow: 2px 2px black;
+}
+
+.conteudo_principal_caixa img {
+    width: 270px;
+}
+
+
+.conteudo_principal_area_copia {
+    padding: 40px 0 0 0;
+}
+
+.conteudo_principal_area_copia .texto_destino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.6rem;
+    border: none;
+    gap: 55px;
+    
+    text-transform: lowercase;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: 150%;
+    resize: none;
+}
+
+.conteudo_principal_area_copia .botao_copiar {
+    width: 400px;
+    padding: 0.6rem;
+    
+    border-radius: 10px;
+    border: 1px solid var(--cor-secundaria);
+    background: linear-gradient(rgba(105, 44, 80, 0.5), #1E0B0B);
+    cursor: pointer;
+    
+    color: var(--cor-primaria);
+    text-align: center ;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all .2s ease;
+}
+
+.texto_destino::-webkit-scrollbar {
+    width: 5px;
+}
+
+.texto_destino::-webkit-scrollbar-track {
+    background: var(--cor--rodape);
+}
+
+.texto_destino::-webkit-scrollbar-thumb {
+    background-color: var(--cor--rodape);
+    border-radius: 10px;
+    border: 1px solid var(--cor-primaria);
+}
+
+.botao_criptografar:hover {
+    background-color: var(--cor-hover);
+}
+
+.botao_descriptografar:hover {
+    background-color: var(--cor-hover);
+}
+
+.botao_copiar:hover {
+    background-color: var(--cor-hover);
+}
+
+.conteudo_principal_caixa img {
+    width: 400px;
+}
+
+.conteudo_principal_informacoes h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 10px;
+}
+
+.conteudo_principal_informacoes p {
+    text-align: center;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0 40px;
+}
+
+.rodape {
+    padding: 2px 0;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    text-align: center;
+    background-color: var(--cor--rodape);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+}
+
+.rodape img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rodape p {
+    display: inline-block;
+    vertical-align: middle;
+}

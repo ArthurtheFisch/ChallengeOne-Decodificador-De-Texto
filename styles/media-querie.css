@@ -1,0 +1,91 @@
+:root {
+    --cor-primaria: #DCE0D9;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(/img/josuke\ background\ midia.jpg);
+        flex-direction: column;
+    }
+
+    .conteudo_principal {
+        flex-direction: column;
+        padding: 0 40px 0 40px;
+        gap: 0;
+    }
+
+    .conteudo_principa_campo {
+        padding: 11.11% 0 0 0;
+    }
+
+    .criptografar_descriptografar .texto {
+        width: 100%;
+    }
+
+    .conteudo_principal_caixa {
+        height: 133px;
+        width: auto;
+        max-width: none;
+    }
+
+    .conteudo_principal_area_copia {
+        width: auto;
+        height: 170px;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .conteudo_principal_caixa img {
+        display: none;
+    }
+
+    .conteudo_principal_area_copia .texto_destino {
+        width: 100%;
+    }
+
+    .conteudo_principal_area_copia .botao_copiar {
+        width: 100%;
+    }
+
+.rodape {
+        position: absolute;
+        width: 100%;
+        top: 145%;
+    }
+}
+
+
+@media (max-width: 660px) {
+
+    .conteudo_principal_botoes {
+        flex-direction: column;
+    }
+
+    .conteudo_principal_aviso {
+        text-shadow: 1px 1px black;
+    }
+
+    .conteudo_principal_informacoes h2 {
+    text-shadow: 2px 2px black;
+    font-size: 2em; color: var(--cor-primaria);
+    }
+
+    .conteudo_principal_informacoes p {
+        text-shadow: 2px 2px black;
+    }
+
+    .botao_criptografar,
+    .botao_descriptografar {
+        width: 100%;
+        clip-path: none;
+        border-radius: 0.6rem;
+    }
+
+    .conteudo_principal_caixa {
+        height: 186px;
+        width: auto;
+        max-width: none;
+    }
+}
+

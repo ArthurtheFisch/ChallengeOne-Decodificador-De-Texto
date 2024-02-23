@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-querie.css">
+    <link rel="stylesheet" href="./img/peakpx.jpg">
+</head>
+<body>
+    <main class="conteudo_principal">
+        <section class="conteudo_principal_campo">
+            <div class="criptografar_descriptografar">
+                <textarea class="texto" id="areaDeTexto" placeholder="Digite seu texto" spellcheck="false" cols="40" rows="10"></textarea>
+            </div>
+            <div class="conteudo_principal_aviso">
+                <img class="aviso" src="./assets/alert-icon.png" alt="icone de alerta">
+                <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="conteudo_principal_botoes">
+                <button onclick="criptografar()" class="botao_criptografar" id="btnCriptografar" type="submit">Criptografar</button>
+                <button onclick="descriptografar()" class="botao_descriptografar" id="btnDescriptografar" type="submit">Descriptografar</button>
+            </div>
+        </section>
+        <section class="conteudo_principal_mensagens">
+            <div class="conteudo_principal_caixa">
+                <img src="./img/jojo.png" alt="jojo">
+                <div class="conteudo_principal_informacoes">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar!</p>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo_area_copia">
+            <div class="conteudo_principal_area_copia">
+                <textarea readonly="true" class="texto_destino"  spellcheck="false" id="areaCopia" cols="25" rows="10"></textarea>
+                <button class="botao_copiar" id="botaoCopiar">Copiar</button>
+            </div>  
+        </section>
+    </main>
+    <footer class="rodape">
+        <img src="./img/kisspng-jojo-s-bizarre-adventure-pixel-art-jonathan-joesta-5ae321a6ee0137.9384294715248347269749.png" alt="">
+        <p>© Developed by Arthur Fisch</p>
+    </footer>
+
+    <script src="/script.js" ></script>
+
+</body>
+</html>
